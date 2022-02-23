@@ -1,0 +1,355 @@
+/*________header________*/
+
+.header {
+    background-color: rgb(37, 43, 49);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid rgb(215, 30, 60);
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-wrapper {
+    padding-bottom: 6px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    margin: 0 35px 0 35px;
+}
+
+@media (max-width: 920px) {
+    .menu {
+        margin: 15px 10px 0 10px;
+    }
+}
+
+.menu {
+    font-family: "ReformaGroteskMediumC", sans-serif;
+    font-size: 21px;
+    line-height: 100%;
+    font-weight: 400;
+    letter-spacing: 0.105em;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+}
+
+.cur-point {
+    cursor: pointer;
+}
+
+.menu:hover::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    bottom: -8px;
+    left: calc(50% - 25px);
+    background: rgb(215, 30, 60);
+    border-radius: 50px;
+}
+
+.active:before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    bottom: -8px;
+    left: calc(50% - 100px);
+    background: rgb(215, 30, 60);
+    border-radius: 50px;
+}
+
+.login-title {
+    font-family: "ReformaGroteskMediumC", sans-serif;
+    font-size: 15px;
+    line-height: 100%;
+    font-weight: 500;
+    letter-spacing: 0.105em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.login-flex {
+    display: flex;
+    align-items: center;
+}
+
+.login-img {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.login-img img {
+    width: 50px;
+    border-radius: 30%;
+}
+
+.login-flex:hover .login-title {
+    color: red;
+}
+
+.login_active {
+    color: red;
+}
+
+/*________main________*/
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+}
+
+.title-2 {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 10px;
+    text-align: center;
+}
+
+.mrg {
+    margin: 15px;
+}
+
+.pd {
+    padding: 10px;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-r {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.main {
+    background-color: rgb(55, 60, 65);
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    flex: 1 1 auto;
+}
+
+.main_flex {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    flex: 1 1 auto;
+}
+
+.container2 {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+/*________sidebar________*/
+.sidebar {
+    width: 100px;
+    background-color: rgb(199, 199, 199);
+}
+
+.menu-wrapper_sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+/* .active {
+    background-color: rgb(236, 130, 130);
+} */
+
+/*________content________*/
+
+.content {
+    width: 100%;
+}
+
+.flex__cont {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    flex: 1 1 auto;
+}
+
+.tile-s1 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #1a1a1a;
+}
+
+/*________nav-button________*/
+
+.menu_item {
+    font-family: "ReformaGroteskMediumC", sans-serif;
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box:hover {
+    color: crimson;
+}
+
+/*________news________*/
+
+.flex_news {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 30px 10px 10px;
+    gap: 10px;
+    width: 100%;
+}
+
+.img-title-news img {
+    width: 300px;
+    border-radius: 30px;
+}
+
+.news-card {
+    margin: 10px;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.text {
+    margin: 15px;
+    width: 100%;
+}
+
+.tile-news {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: start;
+    color: rgb(17, 65, 138);
+    margin-bottom: 10px;
+}
+
+.foreword-news {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: start;
+    color: #353535;
+}
+
+/*________btm________*/
+
+.btm_form {
+    min-width: 30px;
+    height: 30px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin: 5px;
+    padding: 0 10px 0 10px;
+    background-color: rgb(35, 75, 110);
+    border: 3px solid rgb(35, 75, 110);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btm_form:hover {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(32, 32, 32);
+    color: rgb(0, 0, 0);
+}
+
+.btm_form:active {
+    background-color: rgb(215, 30, 60);
+    border: 3px solid rgb(215, 30, 60);
+    color: rgb(255, 255, 255);
+}
+
+/*________footer________*/
+
+.footer {
+    background-color: rgb(37, 43, 49);
+    border-top: 5px solid rgb(215, 30, 60);
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.footer__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
